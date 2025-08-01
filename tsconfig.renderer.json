@@ -1,0 +1,26 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "outDir": "./dist/renderer",
+    "types": ["node", "babel__core"],
+    "jsx": "react-jsx",
+    "typeRoots": ["./node_modules/@types", "./node_modules"],
+    "allowSyntheticDefaultImports": true,
+    "resolvePackageJsonExports": true,
+    "resolvePackageJsonImports": true,
+    "resolveJsonModule": true,
+    "useDefineForClassFields": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "alwaysStrict": true,
+    "useUnknownInCatchVariables": true
+  },
+  "include": ["src/renderer/**/*", "vite.renderer.config.ts", "src/lib/**/*", "src/types/**/*"],
+  "exclude": ["src/main", "electron"]
+}

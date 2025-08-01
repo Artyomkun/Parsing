@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "node16",
+    "moduleResolution": "node16",
+    "noEmit": false,
+    "outDir": "./dist/main",
+    "types": ["node"]
+  },
+  "include": ["vite.main.config.js", "src/main/**/*", "electron/main.ts"],
+  "exclude": ["src/renderer"]
+}

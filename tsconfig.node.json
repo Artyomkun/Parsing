@@ -1,0 +1,19 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "module": "commonjs",
+    "moduleResolution": "node16",
+    "noEmit": false,
+    "outDir": "./dist/main",
+    "types": ["node"]
+  },
+  "include": [
+    "vite.config.ts",
+    "src/main/**/*",
+    "electron/main.ts"
+  ],
+  "exclude": [
+    "src/renderer"
+  ]
+}
