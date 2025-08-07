@@ -1,87 +1,47 @@
-import { ipcMain, IpcMainInvokeEvent } from 'electron';
-import { parseHTML } from './parsers/htmlParser';
-import { parseDynamicContent } from './parsers/dynamicParser';
-import logger from 'electron-log';
+import { app, BrowserWindow, ipcMain } from 'electron';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-// Настройка логгера
-logger.transports.file.level = 'info';
-logger.transports.console.level = 'debug';
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-// Валидация URL
-const isValidUrl = (url: string): boolean => {
-  try {
-    new URL(url);
-    return true;
-  } catch {
-    return false;
+let mainWindow;
+
+function createWindow() {
+  mainWindow = new BrowserWindow({
+    width: 1200,
+    height: 800,
+    webPreferences: {
+      preload: path.join(__dirname, '../preload/index.js'),
+      contextIsolation: true,
+      nodeIntegration: false
+    }
+  });
+
+  // Загрузка Vite-сервера в разработке
+  if (process.env.NODE_ENV === 'development') {
+    mainWindow.loadURL('http://localhost:39143');
+    mainWindow.webContents.openDevTools();
+  } else {
+    mainWindow.loadFile(path.join(__dirname, '../../dist/renderer/index.html'));
   }
-};
 
-// Валидация CSS селектора
-const isValidSelector = (selector: string): boolean => {
-  return typeof selector === 'string' && selector.trim().length > 0;
-};
+  // Обработчик для IPC
+  ipcMain.on('show-message', (_, message) => {
+    console.log('Message from renderer:', message);
+    // Здесь можно показать диалоговое окно
+  });
+}
 
-ipcMain.handle('parse:html', async (event: IpcMainInvokeEvent, url: string, selector: string) => {
-  try {
-    // Логирование запроса
-    logger.info(`HTML parse request: ${url}, selector: ${selector}`);
-    
-    // Валидация входных данных
-    if (!isValidUrl(url)) {
-      throw new Error('Некорректный URL');
-    }
-    
-    if (!isValidSelector(selector)) {
-      throw new Error('Некорректный CSS селектор');
-    }
-    
-    // Выполнение парсинга
-    const result = await parseHTML(url, selector);
-    logger.debug(`HTML parse success: ${result.length} элементов найдено`);
-    return result;
-    
-  } catch (error) {
-    // Обработка и логирование ошибок
-    const errorMessage = (error as Error).message || 'Неизвестная ошибка при парсинге HTML';
-    logger.error(`HTML parse error: ${errorMessage}`, { url, selector });
-    throw new Error(errorMessage);
-  }
+app.whenReady().then(createWindow);
+
+app.on('window-all-closed', () => {
+  if (process.platform !== 'darwin') app.quit();
 });
 
-ipcMain.handle('parse:dynamic', async (event: IpcMainInvokeEvent, url: string, selector: string) => {
-  try {
-    // Логирование запроса
-    logger.info(`Dynamic parse request: ${url}, selector: ${selector}`);
-    
-    // Валидация входных данных
-    if (!isValidUrl(url)) {
-      throw new Error('Некорректный URL');
-    }
-    
-    if (!isValidSelector(selector)) {
-      throw new Error('Некорректный CSS селектор');
-    }
-    
-    // Выполнение парсинга
-    const result = await parseDynamicContent(url, selector);
-    logger.debug(`Dynamic parse success: ${result.length} элементов найдено`);
-    return result;
-    
-  } catch (error) {
-    // Обработка и логирование ошибок
-    const errorMessage = (error as Error).message || 'Неизвестная ошибка при динамическом парсинге';
-    logger.error(`Dynamic parse error: ${errorMessage}`, { url, selector });
-    throw new Error(errorMessage);
-  }
+app.on('activate', () => {
+  if (BrowserWindow.getAllWindows().length === 0) createWindow();
 });
 
-// Обработка ошибок приложения
-process.on('uncaughtException', (error) => {
-  logger.error('Необработанная ошибка:', error);
+Array.from(document.styleSheets).forEach(sheet => {
+  console.log(sheet.href);
 });
-
-process.on('unhandledRejection', (reason, promise) => {
-  logger.error('Необработанное отклонение промиса:', reason, promise);
-});
-

@@ -1,7 +1,7 @@
-import React, { FC, useState } from 'react';
-import { cn } from '@/lib';
+import  { FC, useState } from 'react';
 import ParserSelector from '../components/ParserSelector';
-
+import * as React from 'react';
+import cn from '@/lib/cn';
 
 interface Props {
   onParse: (config: { type: string; data: string }) => Promise<string>;

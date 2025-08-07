@@ -1,18 +1,18 @@
 {
   "compilerOptions": {
-    "target": "es2022",
-    "module": "node16",
-    "moduleResolution": "node16",
+    "jsx": "react",
+    "target": "ES2020",
     "strict": true,
-    "esModuleInterop": true,
     "skipLibCheck": true,
-    "jsx": "react-jsx",
+    "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
-      "@renderer/*": ["src/renderer/*"]
-    }
+      "@/main/*": ["src/main/*"],
+      "@/preload/*": ["src/preload/*"],
+      "@/renderer/*": ["src/renderer/*"]
+    },
+    "types": ["node", "electron"]
   },
-  "include": ["src/**/*", "electron/**/*", "vite.config.js", "main.js"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["src/**/*"]
 }

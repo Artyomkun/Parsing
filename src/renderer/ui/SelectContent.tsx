@@ -1,8 +1,6 @@
 import * as React from "react";
-import * as SelectPrimitive from "@radix-ui/react-select";
-import { cn } from "@/lib/utils";
-import ChevronDown from "./ChevronDown";
-import ChevronUp from "./ChevronUp";
+import { ChevronUp, ChevronDown } from "lucide-react";
+import cn from "@/lib/cn";
 
 
 const SelectContent = React.forwardRef<

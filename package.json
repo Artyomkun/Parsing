@@ -1,22 +1,32 @@
 {
   "name": "parsing-app",
   "version": "1.0.0",
-  "main": "main.js",
+  "type": "module",
+  "main": "./dist/main/main.js",
   "packageManager": "npm@10.8.2",
   "dependencies": {
     "@radix-ui/react-select": "^2.1.2",
-    "cheerio": "^1.0.0",
+    "@types/yaml": "^1.9.6",
+    "axios": "^1.11.0",
+    "chart.js": "^4.5.0",
+    "cheerio": "^1.1.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "electron-log": "^5.2.0",
-    "electron-squirrel-startup": "^1.0.1",
+    "electron-log": "^5.4.2",
     "express": "^5.1.0",
+    "fast-xml-parser": "^5.2.5",
+    "json2csv": "^5.0.7",
+    "lodash": "^4.17.21",
     "lucide-react": "^0.452.0",
-    "papaparse": "^5.4.1",
-    "puppeteer": "^23.11.1",
+    "papaparse": "^5.5.3",
+    "path-browserify": "^1.0.1",
+    "puppeteer-core": "^24.16.0",
     "react": "^18.3.1",
+    "react-chartjs-2": "^5.3.0",
     "react-dom": "^18.3.1",
-    "tailwind-merge": "^2.6.0"
+    "tailwind-merge": "^2.6.0",
+    "xml2js": "^0.6.2",
+    "yaml": "^2.8.1"
   },
   "devDependencies": {
     "@babel/core": "^7.28.0",
@@ -28,22 +38,113 @@
     "@electron-forge/plugin-auto-unpack-natives": "^7.8.2",
     "@electron-forge/plugin-fuses": "^7.8.2",
     "@electron-forge/plugin-vite": "^7.5.0",
-    "@electron/fuses": "^2.0.0",
+    "@electron/fuses": "^1.6.0",
     "@types/babel__core": "^7.20.5",
-    "@types/node": "^22.7.4",
+    "@types/chart.js": "^2.9.41",
+    "@types/cheerio": "^0.22.35",
+    "@types/electron": "^1.4.38",
+    "@types/express": "^5.0.3",
+    "@types/ini": "^4.1.1",
+    "@types/js-yaml": "^4.0.9",
+    "@types/json2csv": "^5.0.7",
+    "@types/json2xml": "^0.1.4",
+    "@types/lodash": "^4.17.20",
+    "@types/node": "^20.19.9",
     "@types/papaparse": "^5.3.16",
-    "@types/puppeteer": "^7.0.4",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
+    "@types/puppeteer": "^5.4.7",
+    "@types/puppeteer-core": "^5.4.0",
+    "@types/react": "^18.2.56",
+    "@types/react-dom": "^18.2.19",
+    "@types/xml2js": "^0.4.14",
     "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "^10.4.21",
     "concurrently": "^9.2.0",
+    "electron": "^28.3.3",
+    "postcss": "^8.5.6",
+    "puppeteer": "^24.15.0",
+    "rollup-plugin-visualizer": "^5.12.0",
+    "tailwindcss": "^3.4.3",
     "typescript": "^5.5.4",
-    "vite": "^7.0.5",
+    "vite": "^7.0.6",
+    "vite-plugin-commonjs": "^0.10.4",
+    "vite-plugin-electron": "^0.29.0",
     "wait-on": "^8.0.4"
   },
   "scripts": {
-    "dev": "vite --port 39143 --host",
-    "build": "vite build",
-    "preview": "vite preview --port 39144"
+    "dev": "concurrently -k \"vite --port 39143 --host --config vite.renderer.config.ts\" \"wait-on tcp:39143 && electron-forge start\"",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "start": "electron-forge start",
+    "build:main": "vite build -c vite.main.config.ts",
+    "build:preload": "vite build -c vite.preload.config.ts",
+    "build:renderer": "vite build -c vite.renderer.config.ts",
+    "build": "npm run build:main && npm run build:preload && npm run build:renderer"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "asar": true
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "parsing_app"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ],
+      "plugins": [
+        {
+          "name": "@electron-forge/plugin-vite",
+          "config": {
+            "build": [
+              {
+                "entry": "src/main/main.ts",
+                "config": "vite.main.config.ts"
+              },
+              {
+                "entry": "src/preload/preload.ts",
+                "config": "vite.preload.config.ts"
+              }
+            ],
+            "renderer": [
+              {
+                "name": "main_window",
+                "config": "vite.renderer.config.ts"
+              }
+            ]
+          }
+        },
+        {
+          "name": "@electron-forge/plugin-auto-unpack-natives",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/plugin-fuses",
+          "config": {
+            "version": 1,
+            "fuses": {
+              "asar": true,
+              "codeSigning": false,
+              "runAsNode": false
+            }
+          }
+        }
+      ]
+    }
   }
 }

@@ -1,34 +1,16 @@
+import { OpenDialogOptions } from 'electron';
+
 interface ElectronAPI {
   parseUrl: (url: string) => Promise<string>;
-}
-
-interface Window {
-  Electron: ElectronAPI;
 }
 
 declare global {
   interface Window {
     Electron: {
-      openFile: (options: Electron.OpenDialogOptions) => Promise<string>;
+      openFile: (options: OpenDialogOptions) => Promise<string | null>;
+    };
+    myAPI: {
+      loadPreferences: () => Promise<any>;
     };
   }
 }
-
-const mainWindow = new BrowserWindow({
-  webPreferences: {
-    preload: path.join(app.getAppPath(), 'preload.js'),
-    contextIsolation: true,
-    nodeIntegration: false,
-    enableRemoteModule: false // модуль remote отключён
-  }
-});
-
-contextBridge.exposeInMainWorld('Electron', {
-  openFile: (options) => ipcRenderer.invoke('open-file', options)
-});
-
-contextBridge.exposeInMainWorld('myAPI', {
-  loadPreferences: () => ipcRenderer.invoke('load-prefs')
-});
-
-export default App;
