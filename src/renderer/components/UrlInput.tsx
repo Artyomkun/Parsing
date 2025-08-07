@@ -1,18 +1,21 @@
-import React from 'react'; // Исправленный импорт
-import { Button } from '@/renderer/ui/Button';
-import { Input } from '@/renderer/ui/Input';
-import { Label } from '@/renderer/ui/Label';
+ import * as React from 'react';
+import { Button } from '../ui/Button';
+import { Input } from '../ui/Input';
+import { Label } from '../ui/Label';
 
 interface UrlInputProps {
-  onParse: (url: string) => void;
+  onParse: (url: string) => Promise<void>;
+  loading: boolean;
 }
 
-const UrlInput: React.FC<UrlInputProps> = ({ onParse }) => {
+const UrlInput: React.FC<UrlInputProps> = ({ onParse, loading }) => {
   const [url, setUrl] = React.useState('');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    onParse(url);
+    if (url.trim()) {
+      onParse(url.trim());
+    }
   };
 
   return (
@@ -23,12 +26,19 @@ const UrlInput: React.FC<UrlInputProps> = ({ onParse }) => {
           id="url"
           type="url"
           value={url}
-          onChange={(e) => setUrl(e.target.value)}
+          onChange={(e: { target: { value: React.SetStateAction<string>; }; }) => setUrl(e.target.value)}
           placeholder="https://example.com"
           required
+          disabled={loading}
         />
       </div>
-      <Button type="submit">Start Parsing</Button>
+      <Button 
+        type="submit"
+        disabled={loading || !url.trim()}
+        className={loading ? 'opacity-75 cursor-not-allowed' : ''}
+      >
+        {loading ? 'Parsing...' : 'Start Parsing'}
+      </Button>
     </form>
   );
 };

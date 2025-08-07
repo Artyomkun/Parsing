@@ -1,6 +1,5 @@
+import cn from "@/lib/cn"
 import * as React from "react"
-import { Slot } from "@radix-ui/react-slot"
-import { cn } from "@/lib/utils"
 
 const SelectTrigger = React.forwardRef<
   HTMLButtonElement,

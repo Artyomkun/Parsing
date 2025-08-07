@@ -1,5 +1,5 @@
-// /workspaces/Parsing/src/renderer/ui/TableIcon.tsx
-import React from 'react';
+import * as React from "react";
+
 
 interface TableIconProps {
   size?: number; // Пропс size с типом number, опциональный

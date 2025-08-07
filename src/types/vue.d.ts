@@ -1,4 +1,22 @@
-declare module '*.vue' {
-  import type { DefineComponent } from 'vue';
-  const component: DefineComponent<{}, {}, any>;
+
+
+declare module 'vue' {
+  export interface ComponentCustomProperties {
+    $myProperty: string;
+  }
+}
+declare module 'vue/types/vue' {
+  interface Vue {
+    $myProperty: string;
+  }
+}
+declare module 'vue/types/options' {
+  interface ComponentOptions {
+    myProperty?: string; 
+  }
+}
+declare module 'vue/types/vue' {
+  interface VueConstructor {
+    myGlobalMethod: () => void; 
+  }
 }

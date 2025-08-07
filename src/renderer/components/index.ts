@@ -12,6 +12,6 @@ export { Button } from '../ui/Button';
 export { Input } from '../ui/Input';
 export { Label } from '../ui/Label';
 
-export { cn } from "@/lib/utils";
+
 export * from './ParserSelector';
 export * from '../ui/SelectItem';

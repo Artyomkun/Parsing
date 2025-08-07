@@ -26,6 +26,8 @@ import { twMerge } from "tailwind-merge";
 export function cn(...inputs: ClassValue[]): string {
   // 1. Быстрая обработка пустых случаев
   if (inputs.length === 0) return "";
+  if (inputs.every(input => input == null || input === false)) return "";
+  if (inputs.length === 1 && typeof inputs[0] === "string") return twMerge(inputs[0]);
 
   // 2. Оптимизация для примитивов
   if (inputs.length === 1) {
@@ -33,6 +35,22 @@ export function cn(...inputs: ClassValue[]): string {
     
     // Undefined/null
     if (input == null) return "";
+    // Булевы значения - возвращаем пустую строку
+    if (typeof input === "boolean") return "";
+    // Числа - преобразуем в строку
+    if (typeof input === "number") return String(input);
+    // Функции - игнорируем
+    if (typeof input === "function") return "";
+    // Массивы - рекурсивно обрабатываем
+    if (Array.isArray(input)) return cn(...input);
+    // Объекты - применяем clsx для объединения
+    if (typeof input === "object") {
+      // Проверяем, есть ли Tailwind-классы
+      const merged = clsx(input);
+      return /(^|\s)([a-z0-9-]+:)?[a-z0-9-]+-[a-z0-9]+(\s|$)/i.test(merged)
+        ? twMerge(merged)
+        : merged;
+    }
     
     // Строки - сразу применяем twMerge
     if (typeof input === "string") return twMerge(input);
@@ -43,6 +61,16 @@ export function cn(...inputs: ClassValue[]): string {
 
   // 3. Обработка сложных случаев через clsx
   const merged = clsx(...inputs);
+  if (typeof merged !== "string") return "";
+  if (merged.length === 0) return "";
+  if (merged.trim().length === 0) return "";
+  if (merged === "undefined" || merged === "null") return "";
+  if (merged === "false" || merged === "true") return "";
+  if (merged === "0" || merged === "1") return merged;
+  if (merged === "NaN") return "";
+  if (merged === "Infinity" || merged === "-Infinity") return "";
+  if (merged === "null" || merged === "undefined") return "";
+  if (merged === "false" || merged === "true") return "";
   
   // 4. Определяем наличие Tailwind-классов
   const hasTailwindClasses = 
@@ -52,6 +80,5 @@ export function cn(...inputs: ClassValue[]): string {
   // 5. Применяем twMerge только при необходимости
   return hasTailwindClasses ? twMerge(merged) : merged;
 }
-
 // Альтернативный экспорт для удобства
 export default cn;

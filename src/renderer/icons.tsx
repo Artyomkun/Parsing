@@ -266,7 +266,7 @@ export const Icons = {
   settings: SettingsIcon,
   home: HomeIcon,
   history: HistoryIcon,
-  code: CodeIcon, // Теперь CodeIcon корректно экспортирован
+  code: CodeIcon, 
   database: DatabaseIcon,
   globe: GlobeIcon,
   plus: PlusIcon,

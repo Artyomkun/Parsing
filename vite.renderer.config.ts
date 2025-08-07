@@ -18,4 +18,16 @@ export default defineConfig({
       '@renderer': path.resolve(__dirname, 'src/renderer'),
     },
   },
+  // Add this optimizeDeps section
+  optimizeDeps: {
+    include: [
+      'json2csv',
+      'xml2js',
+      'js-yaml',
+      'ini',
+      'json2xml',
+      'papaparse'
+    ],
+    exclude: ['electron']
+  }
 });

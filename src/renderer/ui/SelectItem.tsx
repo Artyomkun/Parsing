@@ -1,6 +1,5 @@
+import cn from '@/lib/cn';
 import * as React from 'react';
-import * as SelectPrimitive from '@radix-ui/react-select';
-import { cn } from '@/lib';
 
 const SelectItem = React.forwardRef<
   React.ElementRef<typeof SelectPrimitive.Item>,

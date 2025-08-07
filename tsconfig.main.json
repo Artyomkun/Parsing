@@ -1,12 +1,27 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "module": "node16",
-    "moduleResolution": "node16",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
     "noEmit": false,
     "outDir": "./dist/main",
-    "types": ["node"]
+    "types": ["node", "electron", "cheerio", "puppeteer-core"],
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "rootDir": "src/main",
+    "composite": true,
+    "lib": ["es2020"]
   },
-  "include": ["vite.main.config.js", "src/main/**/*", "electron/main.ts"],
-  "exclude": ["src/renderer"]
+  "include": [
+    "src/main/**/*",
+    "vite.main.config.js",
+    "electron/main.ts"
+  ],
+  "exclude": [
+    "src/renderer",
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ]
 }

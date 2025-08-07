@@ -2,7 +2,8 @@ import React from 'react';
 import Papa from 'papaparse';
 
 import { CodeIcon } from '../icons';
-import { TableIcon } from '../ui';
+import { TableIcon } from '../ui/TableIcon';
+
 
 interface ResultViewProps {
   data: any[] | null;
