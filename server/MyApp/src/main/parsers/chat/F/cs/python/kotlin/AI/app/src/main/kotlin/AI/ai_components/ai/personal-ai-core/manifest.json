@@ -1,0 +1,25 @@
+{
+  "name": "personal-ai-core",
+  "version": "1.0.0",
+  "type": "ai_core",
+  "description": "Персональное ядро ИИ для обработки многомерных данных",
+  "author": "User",
+  "created": "2025-01-11T16:28:00",
+  "mainClass": "PersonalAICore",
+  "dependencies": [
+    "kotlinx.coroutines",
+    "kotlinx.serialization"
+  ],
+  "capabilities": [
+    "multidimensional_analysis",
+    "quantum_processing",
+    "neural_networks",
+    "data_processing"
+  ],
+  "config": {
+    "dimensions": 5,
+    "quantum_enabled": true,
+    "neural_layers": 10,
+    "processing_threads": 4
+  }
+}

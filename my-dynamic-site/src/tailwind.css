@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- Исправления Tailwind --- */
+
+/* appearance — чтобы VSCode не ругался */
+[class*="appearance-"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* align-* — только вертикальное выравнивание (без принудительного display) */
+[class*="align-"] {
+  vertical-align: middle;
+}

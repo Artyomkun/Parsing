@@ -1,0 +1,26 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "lib": ["ES2021"],
+    "outDir": "./dist/main",
+    "rootDir": "./server",
+    "composite": true,
+    "sourceMap": true,
+    "types": ["node"],
+    "allowImportingTsExtensions": true,
+    "emitDeclarationOnly": true, 
+    "skipLibCheck": true
+  },
+  "include": [
+    "server/MyApp/src/main/**/*",
+    "server/devolper/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ]
+}

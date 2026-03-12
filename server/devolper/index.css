@@ -1,0 +1,8 @@
+body {
+  background-color: red !important;
+}
+
+/* Добавьте это, чтобы убедиться в работе стилей */
+* {
+  border: 1px solid blue;
+}

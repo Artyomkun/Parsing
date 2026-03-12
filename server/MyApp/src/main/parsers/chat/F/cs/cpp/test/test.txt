@@ -1,0 +1,3 @@
+This is a sample text file for testing the universal parser.
+It contains multiple lines of text to demonstrate
+the text parsing functionality.
