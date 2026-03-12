@@ -1,0 +1,28 @@
+{
+  "name": "document-analyzer",
+  "version": "2.1.0",
+  "type": "document_processor",
+  "description": "Анализатор документов с поддержкой многомерного контекста",
+  "author": "User",
+  "created": "2025-01-11T16:30:00",
+  "mainClass": "DocumentAnalyzer",
+  "dependencies": [
+    "kotlinx.coroutines",
+    "kotlinx.serialization",
+    "org.apache.pdfbox",
+    "org.apache.poi"
+  ],
+  "capabilities": [
+    "pdf_processing",
+    "docx_processing",
+    "text_extraction",
+    "content_analysis",
+    "metadata_extraction"
+  ],
+  "config": {
+    "supported_formats": ["pdf", "docx", "txt", "html"],
+    "max_file_size_mb": 50,
+    "extract_images": true,
+    "preserve_formatting": true
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "ai-visualizer",
+  "version": "1.0.5",
+  "type": "visualizer",
+  "description": "Визуализатор данных ИИ с поддержкой многомерных представлений",
+  "author": "User",
+  "created": "2025-01-11T16:31:15",
+  "mainClass": "AIVisualizer",
+  "dependencies": [
+    "kotlinx.coroutines",
+    "kotlinx.serialization",
+    "javafx.controls",
+    "javafx.fxml",
+    "org.jfree.jfreechart"
+  ],
+  "capabilities": [
+    "neural_network_visualization",
+    "data_flow_charts",
+    "performance_monitoring",
+    "3d_data_rendering",
+    "interactive_dashboards"
+  ],
+  "config": {
+    "rendering_engine": "javafx",
+    "enable_3d": true,
+    "max_data_points": 10000,
+    "refresh_rate_hz": 30,
+    "export_formats": ["png", "svg", "pdf"]
+  }
+}

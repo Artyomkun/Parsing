@@ -8,11 +8,7 @@ export default defineConfig({
     host: true
   },
   build: {
-<<<<<<< HEAD
     outDir: '../dist/server/MyApp/src/main/renderer',
-=======
-    outDir: 'dist/renderer',
->>>>>>> 6d9ece145be331bb2f202013f3c4ed3b01bd3cd1
     assetsDir: 'assets'
   }
 });

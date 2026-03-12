@@ -1,7 +1,6 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-<<<<<<< HEAD
     "target": "ES2020",
     "module": "ESNext",
     "moduleResolution": "node",
@@ -20,33 +19,8 @@
     "server/devolper/**/*"
   ],
   "exclude": [
-=======
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
-    "noEmit": false,
-    "outDir": "./dist/main",
-    "types": ["node", "electron", "cheerio", "puppeteer-core"],
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "sourceMap": true,
-    "rootDir": "src/main",
-    "composite": true,
-    "lib": ["es2020"]
-  },
-  "include": [
-    "src/main/**/*",
-    "vite.main.config.js",
-    "electron/main.ts"
-  ],
-  "exclude": [
-    "src/renderer",
->>>>>>> 6d9ece145be331bb2f202013f3c4ed3b01bd3cd1
     "node_modules",
     "**/*.spec.ts",
     "**/*.test.ts"
   ]
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 6d9ece145be331bb2f202013f3c4ed3b01bd3cd1
