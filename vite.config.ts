@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+<<<<<<< HEAD
 import * as path from 'path';
 import fs from 'fs';
 import { nodePolyfills } from 'vite-plugin-node-polyfills';
@@ -85,4 +86,47 @@ export default defineConfig({
     strictPort: true,
     hmr: false,
   },
+=======
+import commonjs from 'vite-plugin-commonjs';
+
+export default defineConfig({
+  plugins: [
+    react(),
+    commonjs({
+      filter(id) {
+        // Обрабатываем только нужные пакеты
+        return /node_modules\/(xml2js|js-yaml|ini|json2xml|cheerio)/.test(id);
+      }
+    })
+  ],
+  server: {
+    port: 39143,
+    host: true
+  },
+  build: {
+    outDir: 'dist/renderer',
+    assetsDir: 'assets',
+    rollupOptions: {
+      external: ['electron'], // Исключаем Electron из сборки
+    }
+  },
+  optimizeDeps: {
+    include: [
+      'xml2js',
+      'js-yaml',
+      'ini',
+      'json2xml',
+      'papaparse',
+      'cheerio',
+      'json2csv',
+    ],
+    exclude: ['electron'] // Исключаем Electron
+  },
+  resolve: {
+    alias: {
+      '@': '/src', // Алиас для корня проекта
+      '@renderer': '/src/renderer' // Алиас для рендерера
+    }
+  }
+>>>>>>> 6d9ece145be331bb2f202013f3c4ed3b01bd3cd1
 });

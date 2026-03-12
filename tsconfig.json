@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+<<<<<<< HEAD
     "target": "ES2020",
     "module": "ESNext",
     "moduleResolution": "Node",
@@ -40,4 +41,21 @@
     "node_modules",
     "dist"
   ]
+=======
+    "jsx": "react",
+    "target": "ES2020",
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@/main/*": ["src/main/*"],
+      "@/preload/*": ["src/preload/*"],
+      "@/renderer/*": ["src/renderer/*"]
+    },
+    "types": ["node", "electron"]
+  },
+  "include": ["src/**/*"]
+>>>>>>> 6d9ece145be331bb2f202013f3c4ed3b01bd3cd1
 }
