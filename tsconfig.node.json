@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "extends": "tsconfig.json",
   "compilerOptions": {
     "composite": true,
@@ -20,23 +19,3 @@
     "server/MyApp/src/renderer"
   ]
 }
-=======
-  "extends": "./tsconfig.json",
-  "compilerOptions": {
-    "composite": true,
-    "module": "commonjs",
-    "moduleResolution": "node16",
-    "noEmit": false,
-    "outDir": "./dist/main",
-    "types": ["node"]
-  },
-  "include": [
-    "vite.config.ts",
-    "src/main/**/*",
-    "electron/main.ts"
-  ],
-  "exclude": [
-    "src/renderer"
-  ]
-}
->>>>>>> 6d9ece145be331bb2f202013f3c4ed3b01bd3cd1

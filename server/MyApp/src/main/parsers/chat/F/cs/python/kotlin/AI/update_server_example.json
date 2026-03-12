@@ -1,0 +1,40 @@
+{
+  "updates": [
+    {
+      "component": "personal-ai-core",
+      "version": "1.1.0",
+      "description": "Улучшена производительность многомерного анализа",
+      "release_date": "2025-01-12T10:00:00Z",
+      "download_url": "https://github.com/your-username/ai-5d-system/releases/download/v1.1.0/personal-ai-core.jar",
+      "critical": false,
+      "changes": [
+        "Оптимизирован алгоритм 5D анализа",
+        "Добавлена поддержка новых форматов данных",
+        "Исправлены мелкие ошибки"
+      ]
+    },
+    {
+      "component": "custom-neural-parser",
+      "version": "1.3.0",
+      "description": "Добавлена поддержка новых архитектур нейронных сетей",
+      "release_date": "2025-01-13T14:30:00Z",
+      "download_url": "https://github.com/your-username/ai-5d-system/releases/download/v1.3.0/custom-neural-parser.jar",
+      "critical": true,
+      "changes": [
+        "Добавлена поддержка трансформеров",
+        "Улучшена обработка больших данных",
+        "КРИТИЧНОЕ: Исправлена уязвимость безопасности"
+      ]
+    }
+  ],
+  "system_info": {
+    "latest_version": "1.1.0",
+    "release_date": "2025-01-12T10:00:00Z",
+    "changelog": "Глобальные улучшения производительности и безопасности",
+    "min_requirements": {
+      "java_version": "11",
+      "memory_gb": 4,
+      "disk_space_gb": 2
+    }
+  }
+}
