@@ -1,0 +1,26 @@
+{
+  "name": "custom-neural-parser",
+  "version": "1.2.3",
+  "type": "neural_parser",
+  "description": "Кастомный парсер для обработки нейронных сетей",
+  "author": "User",
+  "created": "2025-01-11T16:29:00",
+  "mainClass": "CustomNeuralParser",
+  "dependencies": [
+    "kotlinx.coroutines",
+    "kotlinx.serialization",
+    "javafx.controls"
+  ],
+  "capabilities": [
+    "neural_network_parsing",
+    "data_structure_analysis",
+    "pattern_recognition",
+    "custom_model_training"
+  ],
+  "config": {
+    "input_format": "json",
+    "output_format": "processed_data",
+    "max_layers": 100,
+    "auto_training": true
+  }
+}

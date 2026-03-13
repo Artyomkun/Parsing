@@ -1,0 +1,19 @@
+appId: com.example.parsing
+productName: Parsing
+directories:
+  output: out
+files:
+  - dist/**/*               
+  - node_modules/**/*       
+  - package.json             
+  - D:/Parsing-main/server/**/*          
+  - D:/Parsing-main/server/MyApp/**/**/**/**/*  
+extraResources:
+  - from: assets
+    to: assets
+    filter:
+      - "**/*"
+  - from: D:/Parsing-main/server/assets
+    to: assets
+    filter:
+      - "**/*"

@@ -1,0 +1,61 @@
+{
+  "extends": "tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "outDir": "../../dist/renderer",
+    "types": [
+      "node",
+      "babel__core",
+      "webpack",
+      "webpack-dev-server"
+    ],
+    "typeRoots": [
+      "../../node_modules/@types",
+      "../../types"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "resolvePackageJsonExports": true,
+    "resolvePackageJsonImports": true,
+    "resolveJsonModule": true,
+    "useDefineForClassFields": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "alwaysStrict": true,
+    "useUnknownInCatchVariables": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "baseUrl": "../../..",
+    "paths": {
+      "@/*": ["server/MyApp/src/renderer/*"],
+      "@components/*": ["server/MyApp/src/renderer/components/*"],
+      "@assets/*": ["server/MyApp/src/renderer/assets/*"]
+    }
+  },
+  "include": [
+    "server/MyApp/src/renderer/**/*",
+    "../../lib/**/*",
+    "../../types/**/*",
+    "./webpack.renderer.config.ts"
+  ],
+  "exclude": [
+    "server/MyApp/src/main",
+    "node_modules",
+    "dist",
+    "build",
+    "**/*.test.ts",
+    "**/*.spec.ts"
+  ]
+}

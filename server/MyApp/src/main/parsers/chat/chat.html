@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grok-Style NER Analyzer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            color: #e5e5e5;
+        }
+        
+        .grok-gradient {
+            background: linear-gradient(135deg, #00d4aa 0%, #0099ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .grok-bg-gradient {
+            background: linear-gradient(135deg, #00d4aa 0%, #0099ff 100%);
+        }
+        
+        .message-user {
+            background: rgba(0, 212, 170, 0.1);
+            border: 1px solid rgba(0, 212, 170, 0.3);
+            border-radius: 18px 18px 4px 18px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .message-bot {
+            background: rgba(26, 26, 26, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 18px 18px 18px 4px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .entity-PER { 
+            background: linear-gradient(135deg, #00d4aa 0%, #0099ff 100%);
+            color: white;
+        }
+        .entity-ORG { 
+            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            color: white;
+        }
+        .entity-LOC { 
+            background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+            color: white;
+        }
+        .entity-MISC { 
+            background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+            color: white;
+        }
+        
+        .typing-indicator {
+            display: inline-block;
+            position: relative;
+            width: 12px;
+            height: 12px;
+        }
+        
+        .typing-indicator:before, .typing-indicator:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #00d4aa;
+        }
+        
+        .typing-indicator:before {
+            left: -18px;
+            animation: typing-pulse 1.2s infinite ease-in-out;
+        }
+        
+        .typing-indicator:after {
+            left: 18px;
+            animation: typing-pulse 1.2s infinite ease-in-out 0.4s;
+        }
+        
+        @keyframes typing-pulse {
+            0%, 100% { transform: scale(0.8); opacity: 0.5; }
+            50% { transform: scale(1); opacity: 1; }
+        }
+        
+        .chat-container {
+            height: 70vh;
+            background: rgba(15, 15, 15, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .input-area {
+            background: rgba(15, 15, 15, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .glow {
+            box-shadow: 0 0 20px rgba(0, 212, 170, 0.3);
+        }
+        
+        .header-glow {
+            text-shadow: 0 0 20px rgba(0, 212, 170, 0.5);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="py-4 px-6 border-b border-gray-800">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full grok-bg-gradient flex items-center justify-center">
+                    <i class="fas fa-brain text-white text-lg"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold grok-gradient header-glow">Grok NER Analyzer</h1>
+                    <p class="text-xs text-gray-400">Распознавание именованных сущностей в стиле Grok</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button id="theme-toggle" class="text-gray-400 hover:text-white transition">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="info-btn" class="text-gray-400 hover:text-white transition">
+                    <i class="fas fa-info-circle"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 container max-w-6xl mx-auto px-4 py-6">
+        <div class="chat-container rounded-2xl p-6 mb-6">
+            <div id="chat-messages" class="h-full overflow-y-auto space-y-4">
+                <!-- Welcome Message -->
+                <div class="flex items-start space-x-3">
+                    <div class="w-8 h-8 rounded-full grok-bg-gradient flex-shrink-0 flex items-center justify-center mt-1">
+                        <i class="fas fa-robot text-white text-xs"></i>
+                    </div>
+                    <div class="message-bot p-4 max-w-3xl">
+                        <div class="flex items-center space-x-2 mb-2">
+                            <span class="font-bold text-white">Grok</span>
+                            <span class="text-xs text-gray-400">только что</span>
+                        </div>
+                        <p class="text-gray-200">
+                            Привет! Я Grok NER Analyzer. Отправьте мне текст на русском языке, 
+                            и я найду в нем именованные сущности: <span class="entity entity-PER">люди (PER)</span>, 
+                            <span class="entity entity-ORG">организации (ORG)</span>, 
+                            <span class="entity entity-LOC">места (LOC)</span> и 
+                            <span class="entity entity-MISC">прочее (MISC)</span>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-area rounded-2xl p-4">
+            <div class="flex space-x-4">
+                <div class="flex-1">
+                    <textarea 
+                        id="user-input" 
+                        rows="3" 
+                        placeholder="Введите текст для анализа..." 
+                        class="w-full bg-transparent text-white placeholder-gray-500 resize-none focus:outline-none"
+                    ></textarea>
+                    <div class="flex items-center justify-between mt-2">
+                        <div class="flex space-x-2 text-gray-500">
+                            <button class="hover:text-gray-300 transition">
+                                <i class="fas fa-paperclip"></i>
+                            </button>
+                            <button class="hover:text-gray-300 transition">
+                                <i class="fas fa-magic"></i>
+                            </button>
+                        </div>
+                        <div class="text-xs text-gray-500">
+                            <span id="char-count">0</span> символов
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col space-y-2">
+                    <button 
+                        id="send-button" 
+                        class="grok-bg-gradient text-white rounded-xl p-3 hover:opacity-90 transition disabled:opacity-50 disabled:cursor-not-allowed glow"
+                    >
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <button 
+                        id="clear-button" 
+                        class="bg-gray-800 text-gray-300 rounded-xl p-3 hover:bg-gray-700 transition"
+                    >
+                        <i class="fas fa-eraser"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+            <div class="bg-gray-900 rounded-xl p-4 border border-gray-800">
+                <div class="flex items-center space-x-3 mb-2">
+                    <div class="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center">
+                        <i class="fas fa-bolt text-blue-400"></i>
+                    </div>
+                    <h3 class="font-semibold text-white">Быстрый анализ</h3>
+                </div>
+                <p class="text-sm text-gray-400">Мгновенное распознавание сущностей в тексте</p>
+            </div>
+            <div class="bg-gray-900 rounded-xl p-4 border border-gray-800">
+                <div class="flex items-center space-x-3 mb-2">
+                    <div class="w-8 h-8 rounded-full bg-green-500/20 flex items-center justify-center">
+                        <i class="fas fa-shield-alt text-green-400"></i>
+                    </div>
+                    <h3 class="font-semibold text-white">Точность</h3>
+                </div>
+                <p class="text-sm text-gray-400">Высокая точность распознавания русскоязычных текстов</p>
+            </div>
+            <div class="bg-gray-900 rounded-xl p-4 border border-gray-800">
+                <div class="flex items-center space-x-3 mb-2">
+                    <div class="w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center">
+                        <i class="fas fa-chart-bar text-purple-400"></i>
+                    </div>
+                    <h3 class="font-semibold text-white">Статистика</h3>
+                </div>
+                <p class="text-sm text-gray-400">Подробная статистика и визуализация результатов</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4 px-6 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto flex items-center justify-between text-sm text-gray-500">
+            <div class="flex items-center space-x-4">
+                <span>Grok NER Analyzer v1.0</span>
+                <div class="flex items-center space-x-1">
+                    <div class="w-2 h-2 rounded-full bg-green-500"></div>
+                    <span>Система активна</span>
+                </div>
+            </div>
+            <div class="flex space-x-4">
+                <button class="hover:text-gray-300 transition">Помощь</button>
+                <button class="hover:text-gray-300 transition">О проекте</button>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const chatMessages = document.getElementById('chat-messages');
+        const userInput = document.getElementById('user-input');
+        const sendButton = document.getElementById('send-button');
+        const clearButton = document.getElementById('clear-button');
+        const charCount = document.getElementById('char-count');
+        const themeToggle = document.getElementById('theme-toggle');
+        const infoBtn = document.getElementById('info-btn');
+
+        // Обновление счетчика символов
+        userInput.addEventListener('input', () => {
+            charCount.textContent = userInput.value.length;
+        });
+
+        // Добавление сообщения в чат
+        function addMessage(text, isUser = false, entities = null, processingTime = null) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'flex items-start space-x-3';
+            
+            if (isUser) {
+                messageDiv.innerHTML = `
+                    <div class="flex-1"></div>
+                    <div class="message-user p-4 max-w-3xl">
+                        <div class="flex items-center space-x-2 mb-2">
+                            <span class="font-bold text-cyan-300">Вы</span>
+                            <span class="text-xs text-gray-400">только что</span>
+                        </div>
+                        <p class="text-white">${text}</p>
+                    </div>
+                    <div class="w-8 h-8 rounded-full bg-cyan-500 flex-shrink-0 flex items-center justify-center">
+                        <i class="fas fa-user text-white text-xs"></i>
+                    </div>
+                `;
+            } else {
+                if (entities && entities.length > 0) {
+                    let entitiesHTML = entities.map(entity => 
+                        `<span class="entity entity-${entity.type} inline-flex items-center px-2 py-1 rounded-full text-xs font-medium" title="${entity.type}">${entity.text}</span>`
+                    ).join(' ');
+                    
+                    messageDiv.innerHTML = `
+                        <div class="w-8 h-8 rounded-full grok-bg-gradient flex-shrink-0 flex items-center justify-center">
+                            <i class="fas fa-robot text-white text-xs"></i>
+                        </div>
+                        <div class="message-bot p-4 max-w-3xl">
+                            <div class="flex items-center space-x-2 mb-2">
+                                <span class="font-bold text-white">Grok</span>
+                                <span class="text-xs text-gray-400">только что</span>
+                            </div>
+                            <p class="text-gray-200 mb-3">
+                                Найдено <strong class="text-white">${entities.length}</strong> сущностей в тексте:
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-3">
+                                ${entitiesHTML}
+                            </div>
+                            <div class="text-xs text-gray-400 flex items-center space-x-2">
+                                <i class="fas fa-clock"></i>
+                                <span>Обработано за ${processingTime}с</span>
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    messageDiv.innerHTML = `
+                        <div class="w-8 h-8 rounded-full grok-bg-gradient flex-shrink-0 flex items-center justify-center">
+                            <i class="fas fa-robot text-white text-xs"></i>
+                        </div>
+                        <div class="message-bot p-4 max-w-3xl">
+                            <div class="flex items-center space-x-2 mb-2">
+                                <span class="font-bold text-white">Grok</span>
+                                <span class="text-xs text-gray-400">только что</span>
+                            </div>
+                            <p class="text-gray-200">${text}</p>
+                        </div>
+                    `;
+                }
+            }
+            
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        // Показать индикатор набора сообщения
+        function showTypingIndicator() {
+            const typingDiv = document.createElement('div');
+            typingDiv.id = 'typing-indicator';
+            typingDiv.className = 'flex items-start space-x-3';
+            typingDiv.innerHTML = `
+                <div class="w-8 h-8 rounded-full grok-bg-gradient flex-shrink-0 flex items-center justify-center">
+                    <i class="fas fa-robot text-white text-xs"></i>
+                </div>
+                <div class="message-bot p-4">
+                    <div class="flex items-center space-x-2">
+                        <span class="text-gray-400 text-sm">Grok печатает</span>
+                        <div class="typing-indicator"></div>
+                    </div>
+                </div>
+            `;
+            chatMessages.appendChild(typingDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        // Скрыть индикатор набора
+        function hideTypingIndicator() {
+            const typingDiv = document.getElementById('typing-indicator');
+            if (typingDiv) {
+                typingDiv.remove();
+            }
+        }
+
+        // Отправка сообщения
+        async function sendMessage() {
+            const text = userInput.value.trim();
+            if (!text) return;
+
+            // Показываем сообщение пользователя
+            addMessage(text, true);
+            userInput.value = '';
+            charCount.textContent = '0';
+            
+            // Показываем индикатор набора
+            showTypingIndicator();
+            
+            // Блокируем кнопку отправки
+            sendButton.disabled = true;
+
+            try {
+                // Имитация API-запроса с задержкой
+                setTimeout(() => {
+                    hideTypingIndicator();
+                    
+                    // Генерация демо-сущностей для примера
+                    const demoEntities = generateDemoEntities(text);
+                    const processingTime = (Math.random() * 0.5 + 0.3).toFixed(2);
+                    
+                    addMessage(null, false, demoEntities, processingTime);
+                    sendButton.disabled = false;
+                }, 1500);
+                
+            } catch (error) {
+                hideTypingIndicator();
+                console.error('Ошибка:', error);
+                addMessage('Произошла ошибка при анализе текста. Пожалуйста, попробуйте еще раз.', false);
+                sendButton.disabled = false;
+            }
+        }
+
+        // Генерация демо-сущностей для примера
+        function generateDemoEntities(text) {
+            const entities = [];
+            const words = text.split(/\s+/);
+            
+            // Простая логика для демо-режима
+            words.forEach((word, index) => {
+                if (word.length > 3) {
+                    let type = '';
+                    const lowerWord = word.toLowerCase();
+                    
+                    if (/(ов$|ев$|ин$|ский$|ская$)/i.test(word) && word.length > 4) {
+                        type = 'PER';
+                    } else if (/(корп|компани|фирм|ооо|зао|пао)/i.test(lowerWord)) {
+                        type = 'ORG';
+                    } else if (/(город|ул|улиц|проспект|площадь|москв|санкт|петербург)/i.test(lowerWord)) {
+                        type = 'LOC';
+                    } else if (index % 5 === 0 && word.length > 5) {
+                        type = 'MISC';
+                    }
+                    
+                    if (type && entities.length < 8) {
+                        entities.push({
+                            text: word.replace(/[.,!?;:]$/, ''),
+                            type: type
+                        });
+                    }
+                }
+            });
+            
+            return entities.length > 0 ? entities : [
+                { text: "Пример", type: "MISC" },
+                { text: "Сущность", type: "ORG" }
+            ];
+        }
+
+        // Очистка чата
+        function clearChat() {
+            chatMessages.innerHTML = `
+                <div class="flex items-start space-x-3">
+                    <div class="w-8 h-8 rounded-full grok-bg-gradient flex-shrink-0 flex items-center justify-center">
+                        <i class="fas fa-robot text-white text-xs"></i>
+                    </div>
+                    <div class="message-bot p-4 max-w-3xl">
+                        <div class="flex items-center space-x-2 mb-2">
+                            <span class="font-bold text-white">Grok</span>
+                            <span class="text-xs text-gray-400">только что</span>
+                        </div>
+                        <p class="text-gray-200">
+                            Привет! Я Grok NER Analyzer. Отправьте мне текст на русском языке, 
+                            и я найду в нем именованные сущности: <span class="entity entity-PER">люди (PER)</span>, 
+                            <span class="entity entity-ORG">организации (ORG)</span>, 
+                            <span class="entity entity-LOC">места (LOC)</span> и 
+                            <span class="entity entity-MISC">прочее (MISC)</span>.
+                        </p>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Переключение темы
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('light-theme');
+            const icon = themeToggle.querySelector('i');
+            if (document.body.classList.contains('light-theme')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+                document.body.style.background = 'linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%)';
+                document.body.style.color = '#333';
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+                document.body.style.background = 'linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%)';
+                document.body.style.color = '#e5e5e5';
+            }
+        });
+
+        // Обработчики событий
+        sendButton.addEventListener('click', sendMessage);
+        clearButton.addEventListener('click', clearChat);
+        
+        userInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+
+        // Автофокус на поле ввода
+        userInput.focus();
+
+        // Информационная кнопка
+        infoBtn.addEventListener('click', () => {
+            addMessage(
+                "Grok NER Analyzer использует современные алгоритмы для распознавания именованных сущностей в тексте. " +
+                "Система идентифицирует: людей (PER), организации (ORG), места (LOC) и другие сущности (MISC). " +
+                "Для лучших результатов используйте четкие, грамматически правильные предложения.",
+                false
+            );
+        });
+    </script>
+</body>
+</html>

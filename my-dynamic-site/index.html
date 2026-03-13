@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parsing App</title>
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="theme-color" content="#1e40af" />
+  <meta name="description" content="Advanced Parsing Application for Efficient Data Processing" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/output.css" />
+  <script type="module" src="/src/index.tsx"></script>
+</head>
+<body class="font-['Roboto'] bg-white">
+  <div id="root"></div>
+  <!-- Dev host log panel (dev only) -->
+  <script type="module">
+    if (!import.meta.env.DEV) { /* no-op in prod */ }
+  
+    // 1) Ранний перехват: буферизуем всё до появления панели
+    const __logBuffer = [];
+    const toText = (v) => {
+      if (v == null) return String(v);
+      if (v instanceof Error) return `${v.name}: ${v.message}\n${v.stack || ''}`;
+      if (typeof v === 'object') { try { return JSON.stringify(v, null, 2); } catch { return String(v); } }
+      return String(v);
+    };
+    const bufferPush = (level, ...args) => __logBuffer.push({ level, args, ts: new Date() });
+  
+    // Перехват console.* как можно раньше
+    ['log','info','warn','error','debug'].forEach(level => {
+      const orig = console[level];
+      console[level] = (...args) => { bufferPush(level, ...args); orig?.apply(console, args); };
+    });
+  
+    // Глобальные ошибки
+    window.addEventListener('error', (event) => {
+      const t = event.target;
+      if (t && t !== window && t.tagName) {
+        const tag = t.tagName.toLowerCase();
+        const src = t.getAttribute('src') || t.getAttribute('href') || '';
+        bufferPush('error', `Resource load error: <${tag}> ${src}`);
+      } else {
+        bufferPush('error', event.error || event.message || 'Unknown window.onerror');
+      }
+    }, true);
+    window.addEventListener('unhandledrejection', (event) => {
+      bufferPush('error', 'Unhandled rejection:', event.reason || 'no reason');
+    });
+  
+    // 2) Когда DOM готов — рисуем панель, дренируем буфер и продолжаем писать и в панель, и в консоль
+    document.addEventListener('DOMContentLoaded', () => {
+      const wrapper = document.createElement('div');
+      wrapper.innerHTML = `
+        <div id="host-logs" style="position:fixed;right:12px;bottom:12px;z-index:99999;width:520px;max-height:50vh;overflow:auto;background:#0b1020;color:#e5e7eb;border:1px solid #334155;border-radius:8px;font:12px/1.4 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace;">
+          <div style="padding:8px 10px;border-bottom:1px solid #334155;display:flex;gap:6px;justify-content:space-between;align-items:center;">
+            <strong style="color:#93c5fd;">Host messages</strong>
+            <div style="display:flex;gap:6px">
+              <button id="host-logs-copy"  style="background:#111827;color:#9ca3af;border:1px solid #374151;border-radius:4px;padding:2px 6px;cursor:pointer;">Copy</button>
+              <button id="host-logs-clear" style="background:#111827;color:#9ca3af;border:1px solid #374151;border-radius:4px;padding:2px 6px;cursor:pointer;">Clear</button>
+            </div>
+          </div>
+          <div id="host-logs-body" style="padding:8px 10px;"></div>
+        </div>`;
+      document.body.appendChild(wrapper.firstElementChild);
+  
+      const panel = document.getElementById('host-logs-body');
+      const clearBtn = document.getElementById('host-logs-clear');
+      const copyBtn  = document.getElementById('host-logs-copy');
+      const MAX_ROWS = 500;
+  
+      function addRow(level, ...args) {
+        const div = document.createElement('div');
+        const ts = new Date().toLocaleTimeString();
+        const color = level === 'error' ? '#fecaca' : level === 'warn' ? '#fde68a' : level === 'debug' ? '#c7d2fe' : '#e5e7eb';
+        div.style.whiteSpace = 'pre-wrap'; div.style.margin = '2px 0'; div.style.color = color;
+        div.textContent = `[${ts}] ${level.toUpperCase()}: ` + args.map(toText).join(' ');
+        panel.appendChild(div);
+        while (panel.children.length > MAX_ROWS) panel.removeChild(panel.firstChild);
+        panel.parentElement.scrollTop = panel.parentElement.scrollHeight;
+      }
+  
+      // Дренируем ранний буфер
+      __logBuffer.forEach(({ level, args }) => addRow(level, ...args));
+      __logBuffer.length = 0;
+  
+      // Дополнительно зеркалим console.* в панель (сохранённый orig уже учтён выше)
+      ['log','info','warn','error','debug'].forEach(level => {
+        const orig = console[level];
+        console[level] = (...args) => { addRow(level, ...args); orig?.apply(console, args); };
+      });
+  
+      // Vite HMR (после инициализации панели, всё в одной области видимости)
+      if (import.meta.hot) {
+        const hot = import.meta.hot;
+        hot.on('vite:connected', () => addRow('info', 'HMR connected', location.origin));
+        hot.on('vite:beforeUpdate', (p) => addRow('info', 'HMR beforeUpdate', (p?.updates||[]).map(u => u.path || u.url)));
+        hot.on('vite:afterUpdate', () => addRow('info', 'HMR afterUpdate'));
+        hot.on('vite:error', (err) => addRow('error', 'HMR error', err?.message || err));
+        hot.on('vite:invalidate', (m) => addRow('warn', 'HMR invalidate', m?.path || ''));
+      }
+  
+      clearBtn.addEventListener('click', () => { panel.innerHTML = ''; });
+      copyBtn.addEventListener('click', async () => {
+        const text = Array.from(panel.children).map(n => n.textContent).join('\n');
+        try { await navigator.clipboard.writeText(text); addRow('info', 'Copied to clipboard'); }
+        catch (e) { addRow('error', 'Copy failed', e); }
+      });
+  
+      addRow('info', 'Log panel ready', navigator.userAgent);
+    });
+  </script>
+</body>
+</html>

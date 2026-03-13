@@ -1,0 +1,495 @@
+diff --git a/node_modules/@puppeteer/browsers/README.md b/node_modules/@puppeteer/browsers/README.md
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/CLI.d.ts b/node_modules/@puppeteer/browsers/lib/cjs/CLI.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/CLI.d.ts.map b/node_modules/@puppeteer/browsers/lib/cjs/CLI.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/CLI.js b/node_modules/@puppeteer/browsers/lib/cjs/CLI.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/CLI.js.map b/node_modules/@puppeteer/browsers/lib/cjs/CLI.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/Cache.d.ts b/node_modules/@puppeteer/browsers/lib/cjs/Cache.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/Cache.d.ts.map b/node_modules/@puppeteer/browsers/lib/cjs/Cache.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/Cache.js b/node_modules/@puppeteer/browsers/lib/cjs/Cache.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/Cache.js.map b/node_modules/@puppeteer/browsers/lib/cjs/Cache.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/browser-data/browser-data.d.ts b/node_modules/@puppeteer/browsers/lib/cjs/browser-data/browser-data.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/browser-data/browser-data.d.ts.map b/node_modules/@puppeteer/browsers/lib/cjs/browser-data/browser-data.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/browser-data/browser-data.js b/node_modules/@puppeteer/browsers/lib/cjs/browser-data/browser-data.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/browser-data/browser-data.js.map b/node_modules/@puppeteer/browsers/lib/cjs/browser-data/browser-data.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chrome-headless-shell.d.ts b/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chrome-headless-shell.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chrome-headless-shell.d.ts.map b/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chrome-headless-shell.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chrome-headless-shell.js b/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chrome-headless-shell.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chrome-headless-shell.js.map b/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chrome-headless-shell.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chrome.d.ts b/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chrome.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chrome.d.ts.map b/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chrome.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chrome.js b/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chrome.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chrome.js.map b/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chrome.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chromedriver.d.ts b/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chromedriver.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chromedriver.d.ts.map b/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chromedriver.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chromedriver.js b/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chromedriver.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chromedriver.js.map b/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chromedriver.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chromium.d.ts b/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chromium.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chromium.d.ts.map b/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chromium.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chromium.js b/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chromium.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chromium.js.map b/node_modules/@puppeteer/browsers/lib/cjs/browser-data/chromium.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/browser-data/firefox.d.ts b/node_modules/@puppeteer/browsers/lib/cjs/browser-data/firefox.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/browser-data/firefox.d.ts.map b/node_modules/@puppeteer/browsers/lib/cjs/browser-data/firefox.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/browser-data/firefox.js b/node_modules/@puppeteer/browsers/lib/cjs/browser-data/firefox.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/browser-data/firefox.js.map b/node_modules/@puppeteer/browsers/lib/cjs/browser-data/firefox.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/browser-data/types.d.ts b/node_modules/@puppeteer/browsers/lib/cjs/browser-data/types.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/browser-data/types.d.ts.map b/node_modules/@puppeteer/browsers/lib/cjs/browser-data/types.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/browser-data/types.js b/node_modules/@puppeteer/browsers/lib/cjs/browser-data/types.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/browser-data/types.js.map b/node_modules/@puppeteer/browsers/lib/cjs/browser-data/types.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/debug.d.ts b/node_modules/@puppeteer/browsers/lib/cjs/debug.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/debug.d.ts.map b/node_modules/@puppeteer/browsers/lib/cjs/debug.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/debug.js b/node_modules/@puppeteer/browsers/lib/cjs/debug.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/debug.js.map b/node_modules/@puppeteer/browsers/lib/cjs/debug.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/detectPlatform.d.ts b/node_modules/@puppeteer/browsers/lib/cjs/detectPlatform.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/detectPlatform.d.ts.map b/node_modules/@puppeteer/browsers/lib/cjs/detectPlatform.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/detectPlatform.js b/node_modules/@puppeteer/browsers/lib/cjs/detectPlatform.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/detectPlatform.js.map b/node_modules/@puppeteer/browsers/lib/cjs/detectPlatform.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/fileUtil.d.ts b/node_modules/@puppeteer/browsers/lib/cjs/fileUtil.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/fileUtil.d.ts.map b/node_modules/@puppeteer/browsers/lib/cjs/fileUtil.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/fileUtil.js b/node_modules/@puppeteer/browsers/lib/cjs/fileUtil.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/fileUtil.js.map b/node_modules/@puppeteer/browsers/lib/cjs/fileUtil.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/generated/version.d.ts b/node_modules/@puppeteer/browsers/lib/cjs/generated/version.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/generated/version.d.ts.map b/node_modules/@puppeteer/browsers/lib/cjs/generated/version.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/generated/version.js b/node_modules/@puppeteer/browsers/lib/cjs/generated/version.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/generated/version.js.map b/node_modules/@puppeteer/browsers/lib/cjs/generated/version.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/httpUtil.d.ts b/node_modules/@puppeteer/browsers/lib/cjs/httpUtil.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/httpUtil.d.ts.map b/node_modules/@puppeteer/browsers/lib/cjs/httpUtil.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/httpUtil.js b/node_modules/@puppeteer/browsers/lib/cjs/httpUtil.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/httpUtil.js.map b/node_modules/@puppeteer/browsers/lib/cjs/httpUtil.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/install.d.ts b/node_modules/@puppeteer/browsers/lib/cjs/install.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/install.d.ts.map b/node_modules/@puppeteer/browsers/lib/cjs/install.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/install.js b/node_modules/@puppeteer/browsers/lib/cjs/install.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/install.js.map b/node_modules/@puppeteer/browsers/lib/cjs/install.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/launch.d.ts b/node_modules/@puppeteer/browsers/lib/cjs/launch.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/launch.d.ts.map b/node_modules/@puppeteer/browsers/lib/cjs/launch.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/launch.js b/node_modules/@puppeteer/browsers/lib/cjs/launch.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/launch.js.map b/node_modules/@puppeteer/browsers/lib/cjs/launch.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/main-cli.d.ts b/node_modules/@puppeteer/browsers/lib/cjs/main-cli.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/main-cli.d.ts.map b/node_modules/@puppeteer/browsers/lib/cjs/main-cli.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/main-cli.js.map b/node_modules/@puppeteer/browsers/lib/cjs/main-cli.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/main.d.ts b/node_modules/@puppeteer/browsers/lib/cjs/main.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/main.d.ts.map b/node_modules/@puppeteer/browsers/lib/cjs/main.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/main.js b/node_modules/@puppeteer/browsers/lib/cjs/main.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/cjs/main.js.map b/node_modules/@puppeteer/browsers/lib/cjs/main.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/CLI.d.ts b/node_modules/@puppeteer/browsers/lib/esm/CLI.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/CLI.d.ts.map b/node_modules/@puppeteer/browsers/lib/esm/CLI.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/CLI.js b/node_modules/@puppeteer/browsers/lib/esm/CLI.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/CLI.js.map b/node_modules/@puppeteer/browsers/lib/esm/CLI.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/Cache.d.ts b/node_modules/@puppeteer/browsers/lib/esm/Cache.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/Cache.d.ts.map b/node_modules/@puppeteer/browsers/lib/esm/Cache.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/Cache.js b/node_modules/@puppeteer/browsers/lib/esm/Cache.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/Cache.js.map b/node_modules/@puppeteer/browsers/lib/esm/Cache.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/browser-data/browser-data.d.ts b/node_modules/@puppeteer/browsers/lib/esm/browser-data/browser-data.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/browser-data/browser-data.d.ts.map b/node_modules/@puppeteer/browsers/lib/esm/browser-data/browser-data.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/browser-data/browser-data.js b/node_modules/@puppeteer/browsers/lib/esm/browser-data/browser-data.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/browser-data/browser-data.js.map b/node_modules/@puppeteer/browsers/lib/esm/browser-data/browser-data.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/browser-data/chrome-headless-shell.d.ts b/node_modules/@puppeteer/browsers/lib/esm/browser-data/chrome-headless-shell.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/browser-data/chrome-headless-shell.d.ts.map b/node_modules/@puppeteer/browsers/lib/esm/browser-data/chrome-headless-shell.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/browser-data/chrome-headless-shell.js b/node_modules/@puppeteer/browsers/lib/esm/browser-data/chrome-headless-shell.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/browser-data/chrome-headless-shell.js.map b/node_modules/@puppeteer/browsers/lib/esm/browser-data/chrome-headless-shell.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/browser-data/chrome.d.ts b/node_modules/@puppeteer/browsers/lib/esm/browser-data/chrome.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/browser-data/chrome.d.ts.map b/node_modules/@puppeteer/browsers/lib/esm/browser-data/chrome.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/browser-data/chrome.js b/node_modules/@puppeteer/browsers/lib/esm/browser-data/chrome.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/browser-data/chrome.js.map b/node_modules/@puppeteer/browsers/lib/esm/browser-data/chrome.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/browser-data/chromedriver.d.ts b/node_modules/@puppeteer/browsers/lib/esm/browser-data/chromedriver.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/browser-data/chromedriver.d.ts.map b/node_modules/@puppeteer/browsers/lib/esm/browser-data/chromedriver.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/browser-data/chromedriver.js b/node_modules/@puppeteer/browsers/lib/esm/browser-data/chromedriver.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/browser-data/chromedriver.js.map b/node_modules/@puppeteer/browsers/lib/esm/browser-data/chromedriver.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/browser-data/chromium.d.ts b/node_modules/@puppeteer/browsers/lib/esm/browser-data/chromium.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/browser-data/chromium.d.ts.map b/node_modules/@puppeteer/browsers/lib/esm/browser-data/chromium.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/browser-data/chromium.js b/node_modules/@puppeteer/browsers/lib/esm/browser-data/chromium.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/browser-data/chromium.js.map b/node_modules/@puppeteer/browsers/lib/esm/browser-data/chromium.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/browser-data/firefox.d.ts b/node_modules/@puppeteer/browsers/lib/esm/browser-data/firefox.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/browser-data/firefox.d.ts.map b/node_modules/@puppeteer/browsers/lib/esm/browser-data/firefox.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/browser-data/firefox.js b/node_modules/@puppeteer/browsers/lib/esm/browser-data/firefox.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/browser-data/firefox.js.map b/node_modules/@puppeteer/browsers/lib/esm/browser-data/firefox.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/browser-data/types.d.ts b/node_modules/@puppeteer/browsers/lib/esm/browser-data/types.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/browser-data/types.d.ts.map b/node_modules/@puppeteer/browsers/lib/esm/browser-data/types.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/browser-data/types.js b/node_modules/@puppeteer/browsers/lib/esm/browser-data/types.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/browser-data/types.js.map b/node_modules/@puppeteer/browsers/lib/esm/browser-data/types.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/debug.d.ts b/node_modules/@puppeteer/browsers/lib/esm/debug.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/debug.d.ts.map b/node_modules/@puppeteer/browsers/lib/esm/debug.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/debug.js b/node_modules/@puppeteer/browsers/lib/esm/debug.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/debug.js.map b/node_modules/@puppeteer/browsers/lib/esm/debug.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/detectPlatform.d.ts b/node_modules/@puppeteer/browsers/lib/esm/detectPlatform.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/detectPlatform.d.ts.map b/node_modules/@puppeteer/browsers/lib/esm/detectPlatform.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/detectPlatform.js b/node_modules/@puppeteer/browsers/lib/esm/detectPlatform.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/detectPlatform.js.map b/node_modules/@puppeteer/browsers/lib/esm/detectPlatform.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/fileUtil.d.ts b/node_modules/@puppeteer/browsers/lib/esm/fileUtil.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/fileUtil.d.ts.map b/node_modules/@puppeteer/browsers/lib/esm/fileUtil.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/fileUtil.js b/node_modules/@puppeteer/browsers/lib/esm/fileUtil.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/fileUtil.js.map b/node_modules/@puppeteer/browsers/lib/esm/fileUtil.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/generated/version.d.ts b/node_modules/@puppeteer/browsers/lib/esm/generated/version.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/generated/version.d.ts.map b/node_modules/@puppeteer/browsers/lib/esm/generated/version.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/generated/version.js b/node_modules/@puppeteer/browsers/lib/esm/generated/version.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/generated/version.js.map b/node_modules/@puppeteer/browsers/lib/esm/generated/version.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/httpUtil.d.ts b/node_modules/@puppeteer/browsers/lib/esm/httpUtil.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/httpUtil.d.ts.map b/node_modules/@puppeteer/browsers/lib/esm/httpUtil.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/httpUtil.js b/node_modules/@puppeteer/browsers/lib/esm/httpUtil.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/httpUtil.js.map b/node_modules/@puppeteer/browsers/lib/esm/httpUtil.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/install.d.ts b/node_modules/@puppeteer/browsers/lib/esm/install.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/install.d.ts.map b/node_modules/@puppeteer/browsers/lib/esm/install.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/install.js b/node_modules/@puppeteer/browsers/lib/esm/install.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/install.js.map b/node_modules/@puppeteer/browsers/lib/esm/install.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/launch.d.ts b/node_modules/@puppeteer/browsers/lib/esm/launch.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/launch.d.ts.map b/node_modules/@puppeteer/browsers/lib/esm/launch.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/launch.js b/node_modules/@puppeteer/browsers/lib/esm/launch.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/launch.js.map b/node_modules/@puppeteer/browsers/lib/esm/launch.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/main-cli.d.ts b/node_modules/@puppeteer/browsers/lib/esm/main-cli.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/main-cli.d.ts.map b/node_modules/@puppeteer/browsers/lib/esm/main-cli.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/main-cli.js.map b/node_modules/@puppeteer/browsers/lib/esm/main-cli.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/main.d.ts b/node_modules/@puppeteer/browsers/lib/esm/main.d.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/main.d.ts.map b/node_modules/@puppeteer/browsers/lib/esm/main.d.ts.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/main.js b/node_modules/@puppeteer/browsers/lib/esm/main.js
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/main.js.map b/node_modules/@puppeteer/browsers/lib/esm/main.js.map
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/lib/esm/package.json b/node_modules/@puppeteer/browsers/lib/esm/package.json
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/src/CLI.ts b/node_modules/@puppeteer/browsers/src/CLI.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/src/Cache.ts b/node_modules/@puppeteer/browsers/src/Cache.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/src/browser-data/browser-data.ts b/node_modules/@puppeteer/browsers/src/browser-data/browser-data.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/src/browser-data/chrome-headless-shell.ts b/node_modules/@puppeteer/browsers/src/browser-data/chrome-headless-shell.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/src/browser-data/chrome.ts b/node_modules/@puppeteer/browsers/src/browser-data/chrome.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/src/browser-data/chromedriver.ts b/node_modules/@puppeteer/browsers/src/browser-data/chromedriver.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/src/browser-data/chromium.ts b/node_modules/@puppeteer/browsers/src/browser-data/chromium.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/src/browser-data/firefox.ts b/node_modules/@puppeteer/browsers/src/browser-data/firefox.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/src/browser-data/types.ts b/node_modules/@puppeteer/browsers/src/browser-data/types.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/src/debug.ts b/node_modules/@puppeteer/browsers/src/debug.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/src/detectPlatform.ts b/node_modules/@puppeteer/browsers/src/detectPlatform.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/src/fileUtil.ts b/node_modules/@puppeteer/browsers/src/fileUtil.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/src/generated/version.ts b/node_modules/@puppeteer/browsers/src/generated/version.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/src/httpUtil.ts b/node_modules/@puppeteer/browsers/src/httpUtil.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/src/install.ts b/node_modules/@puppeteer/browsers/src/install.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/src/launch.ts b/node_modules/@puppeteer/browsers/src/launch.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/src/main-cli.ts b/node_modules/@puppeteer/browsers/src/main-cli.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/src/main.ts b/node_modules/@puppeteer/browsers/src/main.ts
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/src/templates/version.ts.tmpl b/node_modules/@puppeteer/browsers/src/templates/version.ts.tmpl
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/src/tsconfig.cjs.json b/node_modules/@puppeteer/browsers/src/tsconfig.cjs.json
+old mode 100644
+new mode 100755
+diff --git a/node_modules/@puppeteer/browsers/src/tsconfig.esm.json b/node_modules/@puppeteer/browsers/src/tsconfig.esm.json
+old mode 100644
+new mode 100755

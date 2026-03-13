@@ -1,0 +1,25 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "lib": ["ES2021"],
+    "outDir": "./dist/preload",
+    "rootDir": "./server/MyApp/src/preload",
+    "allowImportingTsExtensions": true,
+    "emitDeclarationOnly": true,
+    "composite": true,
+    "sourceMap": true,
+    "types": ["node", "electron"],
+    "skipLibCheck": true
+  },
+  "include": [
+    "server/MyApp/src/preload/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ]
+}
