@@ -107,8 +107,6 @@ $RECYCLE.BIN/
 /tmp/
 /uploads/
 /downloads/
-./server/MyApp/src/main/parsers/chat/Chat-bot
-./server/MyApp/src/main/parsers/chat/F/cs/python/kotlin/AI
 # Большие файлы
 Assets/*.unitypackage
 Assets/*.osm.pbf
