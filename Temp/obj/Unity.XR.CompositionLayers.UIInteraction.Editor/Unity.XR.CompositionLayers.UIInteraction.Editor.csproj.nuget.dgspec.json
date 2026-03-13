@@ -1,0 +1,2298 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Honeycomb2.0\\Unity.XR.CompositionLayers.UIInteraction.Editor.csproj": {}
+  },
+  "projects": {
+    "D:\\Honeycomb2.0\\Unity.AdaptivePerformance.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\Unity.AdaptivePerformance.csproj",
+        "projectName": "Unity.AdaptivePerformance",
+        "projectPath": "D:\\Honeycomb2.0\\Unity.AdaptivePerformance.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\Unity.AdaptivePerformance\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\Unity.Profiling.Core.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.Profiling.Core.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.VisualScripting.Core.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.VisualScripting.Core.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.VisualScripting.Flow.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.VisualScripting.Flow.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\Unity.Burst.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\Unity.Burst.csproj",
+        "projectName": "Unity.Burst",
+        "projectPath": "D:\\Honeycomb2.0\\Unity.Burst.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\Unity.Burst\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\Unity.Collections.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\Unity.Collections.csproj",
+        "projectName": "Unity.Collections",
+        "projectPath": "D:\\Honeycomb2.0\\Unity.Collections.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\Unity.Collections\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\Unity.Burst.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.Burst.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.Mathematics.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.Mathematics.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\Unity.InputSystem.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\Unity.InputSystem.csproj",
+        "projectName": "Unity.InputSystem",
+        "projectPath": "D:\\Honeycomb2.0\\Unity.InputSystem.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\Unity.InputSystem\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\Unity.Mathematics.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\Unity.Mathematics.csproj",
+        "projectName": "Unity.Mathematics",
+        "projectPath": "D:\\Honeycomb2.0\\Unity.Mathematics.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\Unity.Mathematics\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\Unity.Profiling.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\Unity.Profiling.Core.csproj",
+        "projectName": "Unity.Profiling.Core",
+        "projectPath": "D:\\Honeycomb2.0\\Unity.Profiling.Core.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\Unity.Profiling.Core\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\Unity.RenderPipeline.Universal.ShaderLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\Unity.RenderPipeline.Universal.ShaderLibrary.csproj",
+        "projectName": "Unity.RenderPipeline.Universal.ShaderLibrary",
+        "projectPath": "D:\\Honeycomb2.0\\Unity.RenderPipeline.Universal.ShaderLibrary.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\Unity.RenderPipeline.Universal.ShaderLibrary\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\Unity.RenderPipelines.Core.Runtime.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.RenderPipelines.Core.Runtime.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\Unity.RenderPipelines.Core.Runtime.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\Unity.RenderPipelines.Core.Runtime.csproj",
+        "projectName": "Unity.RenderPipelines.Core.Runtime",
+        "projectPath": "D:\\Honeycomb2.0\\Unity.RenderPipelines.Core.Runtime.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\Unity.RenderPipelines.Core.Runtime\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\Unity.Burst.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.Burst.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.Collections.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.Collections.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.InputSystem.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.InputSystem.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.Mathematics.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.Mathematics.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\Unity.RenderPipelines.Core.Runtime.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\Unity.RenderPipelines.Core.Runtime.Shared.csproj",
+        "projectName": "Unity.RenderPipelines.Core.Runtime.Shared",
+        "projectPath": "D:\\Honeycomb2.0\\Unity.RenderPipelines.Core.Runtime.Shared.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\Unity.RenderPipelines.Core.Runtime.Shared\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\Unity.RenderPipelines.Core.Runtime.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.RenderPipelines.Core.Runtime.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\Unity.RenderPipelines.GPUDriven.Runtime.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\Unity.RenderPipelines.GPUDriven.Runtime.csproj",
+        "projectName": "Unity.RenderPipelines.GPUDriven.Runtime",
+        "projectPath": "D:\\Honeycomb2.0\\Unity.RenderPipelines.GPUDriven.Runtime.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\Unity.RenderPipelines.GPUDriven.Runtime\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\Unity.Burst.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.Burst.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.Collections.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.Collections.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.Mathematics.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.Mathematics.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.RenderPipelines.Core.Runtime.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.RenderPipelines.Core.Runtime.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\Unity.RenderPipelines.Universal.Config.Runtime.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\Unity.RenderPipelines.Universal.Config.Runtime.csproj",
+        "projectName": "Unity.RenderPipelines.Universal.Config.Runtime",
+        "projectPath": "D:\\Honeycomb2.0\\Unity.RenderPipelines.Universal.Config.Runtime.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\Unity.RenderPipelines.Universal.Config.Runtime\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\Unity.RenderPipelines.Core.Runtime.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.RenderPipelines.Core.Runtime.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\Unity.RenderPipelines.Universal.Runtime.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\Unity.RenderPipelines.Universal.Runtime.csproj",
+        "projectName": "Unity.RenderPipelines.Universal.Runtime",
+        "projectPath": "D:\\Honeycomb2.0\\Unity.RenderPipelines.Universal.Runtime.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\Unity.RenderPipelines.Universal.Runtime\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\Unity.AdaptivePerformance.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.AdaptivePerformance.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.Burst.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.Burst.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.Mathematics.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.Mathematics.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.RenderPipeline.Universal.ShaderLibrary.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.RenderPipeline.Universal.ShaderLibrary.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.RenderPipelines.Core.Runtime.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.RenderPipelines.Core.Runtime.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.RenderPipelines.Core.Runtime.Shared.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.RenderPipelines.Core.Runtime.Shared.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.RenderPipelines.GPUDriven.Runtime.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.RenderPipelines.GPUDriven.Runtime.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.RenderPipelines.Universal.Config.Runtime.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.RenderPipelines.Universal.Config.Runtime.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\Unity.VisualScripting.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\Unity.VisualScripting.Core.csproj",
+        "projectName": "Unity.VisualScripting.Core",
+        "projectPath": "D:\\Honeycomb2.0\\Unity.VisualScripting.Core.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\Unity.VisualScripting.Core\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\Unity.InputSystem.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.InputSystem.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\Unity.VisualScripting.Flow.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\Unity.VisualScripting.Flow.csproj",
+        "projectName": "Unity.VisualScripting.Flow",
+        "projectPath": "D:\\Honeycomb2.0\\Unity.VisualScripting.Flow.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\Unity.VisualScripting.Flow\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\Unity.InputSystem.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.InputSystem.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.VisualScripting.Core.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.VisualScripting.Core.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\Unity.XR.ARFoundation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\Unity.XR.ARFoundation.csproj",
+        "projectName": "Unity.XR.ARFoundation",
+        "projectPath": "D:\\Honeycomb2.0\\Unity.XR.ARFoundation.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\Unity.XR.ARFoundation\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\Unity.RenderPipelines.Core.Runtime.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.RenderPipelines.Core.Runtime.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.RenderPipelines.Universal.Runtime.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.RenderPipelines.Universal.Runtime.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.XR.ARFoundation.InternalUtils.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.ARFoundation.InternalUtils.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.XR.ARSubsystems.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.ARSubsystems.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.XR.CoreUtils.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.CoreUtils.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.XR.Management.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.Management.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.XR.OpenXR.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.OpenXR.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.SpatialTracking.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.SpatialTracking.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\Unity.XR.ARFoundation.InternalUtils.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\Unity.XR.ARFoundation.InternalUtils.csproj",
+        "projectName": "Unity.XR.ARFoundation.InternalUtils",
+        "projectPath": "D:\\Honeycomb2.0\\Unity.XR.ARFoundation.InternalUtils.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\Unity.XR.ARFoundation.InternalUtils\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\Unity.XR.ARSubsystems.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.ARSubsystems.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.XR.CoreUtils.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.CoreUtils.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.XR.Management.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.Management.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\Unity.XR.ARSubsystems.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\Unity.XR.ARSubsystems.csproj",
+        "projectName": "Unity.XR.ARSubsystems",
+        "projectPath": "D:\\Honeycomb2.0\\Unity.XR.ARSubsystems.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\Unity.XR.ARSubsystems\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\Unity.InputSystem.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.InputSystem.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.XR.CoreUtils.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.CoreUtils.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\Unity.XR.CompositionLayers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\Unity.XR.CompositionLayers.csproj",
+        "projectName": "Unity.XR.CompositionLayers",
+        "projectPath": "D:\\Honeycomb2.0\\Unity.XR.CompositionLayers.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\Unity.XR.CompositionLayers\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\Unity.RenderPipelines.Core.Runtime.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.RenderPipelines.Core.Runtime.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.RenderPipelines.Universal.Runtime.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.RenderPipelines.Universal.Runtime.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.XR.CoreUtils.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.CoreUtils.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.XR.Management.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.Management.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\Unity.XR.CompositionLayers.UIInteraction.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\Unity.XR.CompositionLayers.UIInteraction.csproj",
+        "projectName": "Unity.XR.CompositionLayers.UIInteraction",
+        "projectPath": "D:\\Honeycomb2.0\\Unity.XR.CompositionLayers.UIInteraction.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\Unity.XR.CompositionLayers.UIInteraction\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\Unity.InputSystem.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.InputSystem.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.XR.CompositionLayers.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.CompositionLayers.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.XR.Interaction.Toolkit.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.Interaction.Toolkit.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\Unity.XR.CompositionLayers.UIInteraction.Editor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\Unity.XR.CompositionLayers.UIInteraction.Editor.csproj",
+        "projectName": "Unity.XR.CompositionLayers.UIInteraction.Editor",
+        "projectPath": "D:\\Honeycomb2.0\\Unity.XR.CompositionLayers.UIInteraction.Editor.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\Unity.XR.CompositionLayers.UIInteraction.Editor\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\Unity.XR.CompositionLayers.UIInteraction.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.CompositionLayers.UIInteraction.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEditor.TestRunner.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.TestRunner.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.TestRunner.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.TestRunner.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\Unity.XR.CoreUtils.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\Unity.XR.CoreUtils.csproj",
+        "projectName": "Unity.XR.CoreUtils",
+        "projectPath": "D:\\Honeycomb2.0\\Unity.XR.CoreUtils.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\Unity.XR.CoreUtils\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\Unity.InputSystem.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.InputSystem.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.SpatialTracking.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.SpatialTracking.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\Unity.XR.CoreUtils.Editor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\Unity.XR.CoreUtils.Editor.csproj",
+        "projectName": "Unity.XR.CoreUtils.Editor",
+        "projectPath": "D:\\Honeycomb2.0\\Unity.XR.CoreUtils.Editor.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\Unity.XR.CoreUtils.Editor\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\Unity.InputSystem.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.InputSystem.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.XR.CoreUtils.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.CoreUtils.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEditor.TestRunner.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.TestRunner.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.TestRunner.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.TestRunner.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\Unity.XR.Interaction.Toolkit.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\Unity.XR.Interaction.Toolkit.csproj",
+        "projectName": "Unity.XR.Interaction.Toolkit",
+        "projectPath": "D:\\Honeycomb2.0\\Unity.XR.Interaction.Toolkit.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\Unity.XR.Interaction.Toolkit\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\Unity.Burst.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.Burst.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.InputSystem.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.InputSystem.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.Mathematics.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.Mathematics.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.XR.ARFoundation.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.ARFoundation.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.XR.ARSubsystems.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.ARSubsystems.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.XR.CoreUtils.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.CoreUtils.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.XR.Management.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.Management.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.XR.OpenXR.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.OpenXR.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.XR.Simulation.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.Simulation.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.SpatialTracking.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.SpatialTracking.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.XR.LegacyInputHelpers.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.XR.LegacyInputHelpers.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\Unity.XR.Management.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\Unity.XR.Management.csproj",
+        "projectName": "Unity.XR.Management",
+        "projectPath": "D:\\Honeycomb2.0\\Unity.XR.Management.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\Unity.XR.Management\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\Unity.XR.Management.Editor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\Unity.XR.Management.Editor.csproj",
+        "projectName": "Unity.XR.Management.Editor",
+        "projectPath": "D:\\Honeycomb2.0\\Unity.XR.Management.Editor.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\Unity.XR.Management.Editor\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\Unity.InputSystem.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.InputSystem.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.XR.CoreUtils.Editor.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.CoreUtils.Editor.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.XR.Management.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.Management.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEditor.TestRunner.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.TestRunner.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.TestRunner.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.TestRunner.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\Unity.XR.OpenXR.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\Unity.XR.OpenXR.csproj",
+        "projectName": "Unity.XR.OpenXR",
+        "projectPath": "D:\\Honeycomb2.0\\Unity.XR.OpenXR.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\Unity.XR.OpenXR\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\Unity.InputSystem.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.InputSystem.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.RenderPipelines.Universal.Runtime.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.RenderPipelines.Universal.Runtime.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.XR.CompositionLayers.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.CompositionLayers.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.XR.Management.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.Management.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.XR.Management.Editor.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.Management.Editor.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\Unity.XR.Simulation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\Unity.XR.Simulation.csproj",
+        "projectName": "Unity.XR.Simulation",
+        "projectPath": "D:\\Honeycomb2.0\\Unity.XR.Simulation.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\Unity.XR.Simulation\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\Unity.InputSystem.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.InputSystem.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.Mathematics.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.Mathematics.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.RenderPipelines.Core.Runtime.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.RenderPipelines.Core.Runtime.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.RenderPipelines.Universal.Runtime.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.RenderPipelines.Universal.Runtime.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.XR.ARFoundation.InternalUtils.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.ARFoundation.InternalUtils.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.XR.ARSubsystems.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.ARSubsystems.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.XR.CoreUtils.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.CoreUtils.csproj"
+              },
+              "D:\\Honeycomb2.0\\Unity.XR.Management.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\Unity.XR.Management.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\UnityEditor.TestRunner.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\UnityEditor.TestRunner.csproj",
+        "projectName": "UnityEditor.TestRunner",
+        "projectPath": "D:\\Honeycomb2.0\\UnityEditor.TestRunner.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\UnityEditor.TestRunner\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\UnityEngine.TestRunner.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.TestRunner.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj",
+        "projectName": "UnityEditor.UI",
+        "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\UnityEditor.UI\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\UnityEditor.TestRunner.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.TestRunner.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.TestRunner.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.TestRunner.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\UnityEngine.SpatialTracking.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\UnityEngine.SpatialTracking.csproj",
+        "projectName": "UnityEngine.SpatialTracking",
+        "projectPath": "D:\\Honeycomb2.0\\UnityEngine.SpatialTracking.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\UnityEngine.SpatialTracking\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\UnityEngine.TestRunner.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\UnityEngine.TestRunner.csproj",
+        "projectName": "UnityEngine.TestRunner",
+        "projectPath": "D:\\Honeycomb2.0\\UnityEngine.TestRunner.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\UnityEngine.TestRunner\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj",
+        "projectName": "UnityEngine.UI",
+        "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\UnityEngine.UI\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Honeycomb2.0\\UnityEngine.XR.LegacyInputHelpers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Honeycomb2.0\\UnityEngine.XR.LegacyInputHelpers.csproj",
+        "projectName": "UnityEngine.XR.LegacyInputHelpers",
+        "projectPath": "D:\\Honeycomb2.0\\UnityEngine.XR.LegacyInputHelpers.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Honeycomb2.0\\Temp\\obj\\UnityEngine.XR.LegacyInputHelpers\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\Honeycomb2.0\\UnityEditor.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEditor.UI.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.SpatialTracking.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.SpatialTracking.csproj"
+              },
+              "D:\\Honeycomb2.0\\UnityEngine.UI.csproj": {
+                "projectPath": "D:\\Honeycomb2.0\\UnityEngine.UI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
