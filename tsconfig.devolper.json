@@ -2,11 +2,11 @@
     "extends": "./tsconfig.json",
     "compilerOptions": {
         "module": "ESNext",
-        "moduleResolution": "Node",
-        "target": "ES2020",
-        "lib": ["ES2021", "DOM", "WebWorker"],
+        "moduleResolution": "nodenext",
+        "target": "esnext",
+        "lib": ["esnext", "DOM", "WebWorker"],
         "jsx": "react-jsx",
-        "types": ["node", "electron", "express", "commonjs"],
+        "types": ["nodenext", "electron", "express", "commonjs"],
         "strict": true,
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
@@ -23,17 +23,13 @@
             "@renderer/*": ["server/MyApp/src/renderer/*"],
             "@types/*": ["src/types/*"],
             "@shared/*": ["shared/*"],
-            "@lib/*": ["src/lib"],
             "@server/*": ["server/*"]
         },
         "typeRoots": ["node_modules/@types", "src/types"],
         "outDir": "./dist"
     },
     "include": [
-        "src/**/*",
-        "server/MyApp/src/main/**/*",
-        "server/MyApp/src/preload/**/*",
-        "server/MyApp/src/renderer/**/*"
+        "server/devolper/**/*",
     ],
     "exclude": ["node_modules", "dist"]
 }

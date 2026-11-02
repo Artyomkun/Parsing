@@ -1,0 +1,3 @@
+[submodule "server/app/AI"]
+	path = server/app/AI
+	url = https://github.com/Artyomkun/5D-AI.git

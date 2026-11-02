@@ -4,11 +4,10 @@
     "jsx": "react-jsx",
     "jsxImportSource": "react",
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "nodenext",
     "outDir": "../../dist/renderer",
     "types": [
-      "node",
-      "babel__core",
+      "nodenext",
       "webpack",
       "webpack-dev-server"
     ],

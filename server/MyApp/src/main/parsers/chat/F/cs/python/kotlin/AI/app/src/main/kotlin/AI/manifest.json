@@ -1,9 +1,0 @@
-{
-  "version": "1.1.0",
-  "releaseDate": "2025-10-09",
-  "files": [
-    "https://example.com/universal-assistant/models/update1.bin",
-    "https://example.com/universal-assistant/core/universal.jar"
-  ],
-  "changelog": "Добавлены новые нейронные узлы и улучшена точность анализа."
-}

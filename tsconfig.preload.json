@@ -1,17 +1,17 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "ESnext",
     "module": "ESNext",
-    "moduleResolution": "node",
-    "lib": ["ES2021"],
+    "moduleResolution": "nodenext",
+    "lib": ["ESnext"],
     "outDir": "./dist/preload",
     "rootDir": "./server/MyApp/src/preload",
     "allowImportingTsExtensions": true,
     "emitDeclarationOnly": true,
     "composite": true,
     "sourceMap": true,
-    "types": ["node", "electron"],
+    "types": ["nodenext", "electron"],
     "skipLibCheck": true
   },
   "include": [

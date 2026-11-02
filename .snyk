@@ -1,0 +1,22 @@
+version: v1.25.0
+ignore:
+  SNYK-JS-XLSX-6252523:
+    - '*':
+        reason: 'Fixed in 0.20.2, project uses 0.20.3 from official CDN. False positive.'
+        expires: '2026-10-30T13:30:00.000Z'
+  SNYK-JS-XLSX-5457926:
+    - '*':
+        reason: 'Fixed in 0.19.3, project uses 0.20.3 from official CDN. Snyk false positive.'
+        expires: '2026-10-30T13:30:00.000Z'
+  SNYK-JS-BRACES-19963945:
+    - '*':
+        reason: 'Transitive dev dependency via webpack-dev-server. Not exploitable in production. No fix available upstream.'
+        expires: '2026-10-30T13:30:00.000Z'
+  SNYK-JS-QS-20943482:
+    - '*':
+        reason: 'Fixed in 6.16.1 (CVE-2026-110816). Project uses >=6.16.1 via override.'
+        expires: '2026-10-30T13:30:00.000Z'
+  SNYK-JS-PICOMATCH-21248802:
+    - '*':
+        reason: 'CVE-2026-112366 affects picomatch through 4.0.7. No fixed version available. Transitive dev dependency (via webpack-dev-server). Not exploitable in production because untrusted glob patterns are never passed to picomatch.'
+        expires: '2026-10-30T13:30:00.000Z'
